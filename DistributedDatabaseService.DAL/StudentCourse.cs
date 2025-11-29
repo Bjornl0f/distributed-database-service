@@ -6,5 +6,8 @@ public class StudentCourse
     public Student Student { get; set; }
     public int CourseId { get; set; }
     public Course Course { get; set; }
+    
+    // Додаткові поля
+    public DateTime EnrollmentDate { get; set; } = DateTime.Now;
+    public int? Grade { get; set; }
 }
-

@@ -1,8 +1,23 @@
+using DistributedDatabaseService.DAL;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Додайте DbContext із налаштуваннями рядка підключення
+builder.Services.AddDbContext<LabDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Реєстрація DataSeeder
+builder.Services.AddScoped<DataSeeder>();
 
 var app = builder.Build();
+
+// Заповнення бази даних початковими даними
+using (var scope = app.Services.CreateScope())
+{
+    var seeder = scope.ServiceProvider.GetRequiredService<DataSeeder>();
+    seeder.Seed();
+}
 
 // Configure the HTTP request pipeline.
 
