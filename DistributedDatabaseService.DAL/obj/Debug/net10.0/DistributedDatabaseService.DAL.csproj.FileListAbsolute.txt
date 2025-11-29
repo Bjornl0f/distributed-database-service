@@ -1,0 +1,15 @@
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\bin\Debug\net10.0\DistributedDatabaseService.DAL.deps.json
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\bin\Debug\net10.0\DistributedDatabaseService.DAL.runtimeconfig.json
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\bin\Debug\net10.0\DistributedDatabaseService.DAL.dll
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\bin\Debug\net10.0\DistributedDatabaseService.DAL.pdb
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\DistributedDatabaseService.DAL.csproj.AssemblyReference.cache
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\DistributedDatabaseService.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\DistributedDatabaseService.DAL.AssemblyInfoInputs.cache
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\DistributedDatabaseService.DAL.AssemblyInfo.cs
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\DistributedDatabaseService.DAL.csproj.CoreCompileInputs.cache
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\DistributedDatabaseService.DAL.sourcelink.json
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\DistributedDatabaseService.DAL.dll
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\refint\DistributedDatabaseService.DAL.dll
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\DistributedDatabaseService.DAL.pdb
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\DistributedDatabaseService.DAL.genruntimeconfig.cache
+D:\Programming\DistributedDatabasesLabs\distributed-database-service\DistributedDatabaseService.DAL\obj\Debug\net10.0\ref\DistributedDatabaseService.DAL.dll

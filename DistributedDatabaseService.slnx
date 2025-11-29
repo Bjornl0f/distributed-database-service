@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DistributedDatabaseService.DAL/DistributedDatabaseService.DAL.csproj" />
+  <Project Path="DistributedDatabaseService/DistributedDatabaseService.csproj" />
+</Solution>
