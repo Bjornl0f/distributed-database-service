@@ -1,5 +1,9 @@
 using DistributedDatabaseService.DAL;
+using DistributedDatabaseService.DAL.Settings;
+using DistributedDatabaseService.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +13,23 @@ builder.Services.AddDbContext<LabDbContext>(options =>
 
 // Реєстрація DataSeeder
 builder.Services.AddScoped<DataSeeder>();
+
+// Конфігурація MongoDB Settings
+builder.Services.Configure<MongoDBSettings>(
+    builder.Configuration.GetSection("MongoDBSettings"));
+
+// Реєстрація MongoDB-клієнта
+builder.Services.AddSingleton<IMongoClient>(s =>
+{
+    var settings = s.GetRequiredService<IOptions<MongoDBSettings>>().Value;
+    return new MongoClient(settings.ConnectionString);
+});
+
+// Реєстрація StudentService
+builder.Services.AddSingleton<StudentService>();
+
+// Реєстрація UpdateService для синхронізації даних
+builder.Services.AddHostedService<UpdateService>();
 
 var app = builder.Build();
 

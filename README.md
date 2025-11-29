@@ -16,17 +16,28 @@
 - `Faculty` - факультет (FacultyId, Name, Dean)
 - `Instructor` - викладач (InstructorId, FirstName, LastName, Email, Title, FacultyId)
 
-## Зв'язки
+## Сервіси
 
-- Student → Group (багато до одного)
-- Group → Faculty (багато до одного)
-- Instructor → Faculty (багато до одного)
-- Course → Instructor (багато до одного)
-- Student ↔ Course (багато до багатьох через StudentCourse)
+- `StudentService` - CRUD операції для студентів в MongoDB
+- `UpdateService` - синхронізація даних між SQL Server та MongoDB з використанням транзакцій
 
 ## Налаштування
 
-Connection string до SQL Server налаштовується в `appsettings.json`.
+### SQL Server
+Connection string в `appsettings.json`:
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=SchoolDb;..."
+}
+```
+
+### MongoDB
+```json
+"MongoDBSettings": {
+  "ConnectionString": "mongodb://localhost:27017",
+  "DatabaseName": "SchoolDb"
+}
+```
 
 ## Міграції
 
